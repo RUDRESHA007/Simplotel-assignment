@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Castoro+Titling&family=Caveat&family=Dancing+Script&family=Delicious+Handrawn&family=Fasthand&family=Poppins:wght@500&family=Satisfy&display=swap"); * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Poppins, sans-serif;
+}
+
+i {
+    content: "";
+    font-size: 1.5rem;
+    position: fixed;
+    right: 1.5rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(255, 87, 156, 0.78) 10%, rgba(253, 156, 107, 0.83) 50%, rgba(255, 196, 0, 0.706) 100%);
+}
+/* nav bar section */
+
+
+.container .nav-sec {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    position: fixed;
+    top: 0px;
+    z-index: 10000;
+}
+
+.container .nav-sec .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 6rem;
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    font-weight: 200;
+    font-size: 1.4rem;
+    height: 5rem;
+}
+
+.container .nav-sec .navbar a {
+    transition: all 0.5s ease 0s;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.container .nav-sec .navbar a:hover {
+    color: rgba(0, 0, 0, 0.59);
+    cursor: pointer;
+}
+
+.container .nav-sec .nav-icons {
+    display: none;
+}
+
+.container .nav-sec .desktop {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+    gap: 2rem;
+    list-style: none;
+}
+
+.container .nav-sec .nav-icons img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.container .nav-sec .nav-icons img {
+    height: 1.7rem;
+    width: 1.7rem;
+}
+
+.bars {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -28px;
+    z-index: 1000000;
+    justify-content: center;
+}
+
+.toggle-bar1, .toggle-bar2 {
+    font-size: 1.5rem;
+    color: black;
+    position: absolute;
+    right: 2rem;
+}
+
+.toggle-bar1 {
+    display: block;
+}
+
+.toggle-bar2 {
+    display: none;
+}
+
+
+/* body section  */
+
+.container .body-sec {
+    width: 100%;
+    height: 50rem;
+    background: url("img1.jpg") center center / cover no-repeat;
+}
+
+.container .body-sec .paragraph {
+    width: 44rem;
+    position: absolute;
+    top: 15rem;
+    left: 10rem;
+    padding: 2.5rem;
+    color: aliceblue;
+    background-color: rgba(226, 61, 61, 0.68);
+}
+
+.container .body-sec .paragraph h1 {
+    padding: 1rem 0px;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.container .body-sec .paragraph p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+
+
+/* order section  */
+
+
+
+.container .order-sec {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.container .order-sec h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-weight: 900;
+}
+
+.container .orders {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 4rem 0px;
+}
+
+.container .orders .order {
+    width: 18rem;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+}
+
+.container .orders .order .description {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-weight: 900;
+}
+
+.container .orders .order .description h2 {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container .orders .order .description p {
+    font-weight: 200;
+}
+
+.container .orders .order img {
+    border-top-right-radius: 5rem;
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 12rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 3rem;
+    text-transform: capitalize;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.357);
+    outline: none;
+    font-family: Poppins, sans-serif;
+    font-weight: 900;
+    transition: all 0.5s ease 0s;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container .nav-sec .navbar {
+        gap: 2rem;
+    }
+
+    .container .body-sec .paragraph {
+        width: 33rem;
+        position: absolute;
+        top: 15rem;
+        left: 6rem;
+    }
+
+    .container .orders {
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container .nav-sec .mobile {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .container .nav-sec .desktop {
+        display: none;
+    }
+
+    .container .nav-sec .navbar {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        background-color: white;
+        height: 26rem;
+        top: 56px;
+        width: 16rem;
+        right: -276px;
+        transition: all 0.5s ease 0s;
+        z-index: 2147483647;
+    }
+
+    .container .orders .order {
+        width: 14rem;
+        height: 25rem;
+        gap: 1rem;
+    }
+
+    .container .orders .order .description h2 {
+        font-size: 1.2rem;
+    }
+
+    .container .orders .order .description p {
+        font-size: 0.8rem;
+    }
+
+    .container .body-sec .paragraph {
+        width: 30rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container .body-sec .paragraph {
+        left: 3rem;
+    }
+
+    .container .body-sec .paragraph {
+        width: 21rem;
+        position: absolute;
+        top: 15rem;
+        left: 5rem;
+    }
+
+    .container .orders .order {
+        width: 19rem;
+        height: 26rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container .body-sec .paragraph {
+        width: 18rem;
+        position: absolute;
+        top: 8rem;
+        left: 1rem;
+    }
+
+    .container .body-sec .paragraph h1 {
+        font-size: 1.9rem;
+    }
+
+    .container .body-sec .paragraph p {
+        font-size: 0.8rem;
+        font-weight: 200;
+    }
+}
